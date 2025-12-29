@@ -1,0 +1,22 @@
+{
+    "task": "classification",
+    "model_name": "XGBoostClassifier",
+    "label_definition": "High performance if efficiency >= median, else Low performance",
+    "target": "performance_label",
+    "features": [
+        "irradiance",
+        "hour",
+        "cluster (one-hot encoded)"
+    ],
+    "evaluation_metrics": {
+        "auc": 0.991,
+        "confusion_matrix": {
+            "true_negative": 3761,
+            "false_positive": 233,
+            "false_negative": 187,
+            "true_positive": 3692
+        }
+    },
+    "test_set_size": 7873,
+    "notes": "The model shows strong discrimination between high and low performance clusters."
+}

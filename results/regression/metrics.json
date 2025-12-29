@@ -1,0 +1,16 @@
+{
+    "task": "regression",
+    "model_name": "RandomForestRegressor",
+    "target": "total_power_kw",
+    "features": [
+        "irradiance",
+        "hour",
+        "cluster (one-hot encoded)"
+    ],
+    "evaluation_metrics": {
+        "mse": 24080.23,
+        "r2_score": 0.922
+    },
+    "test_set_size": 7873,
+    "notes": "Random Forest achieved the best performance among tested regression models."
+}
